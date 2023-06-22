@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+body{
+      background-color: white;
+}
+.container{
+    background-color: antiquewhite;
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea,button{
+    padding: 10px;
+    /* margin: 20px; */
+    border: 1px solid rgba(0,0,0, 0.4);
+    outline-style: none;
+    font: 100 1.1rem sans-serif ;
+    margin: 8px;
+    border-radius: 3px;
+}
+#btn{
+    background: black;
+    color:  white;
+    cursor: pointer;
+}
+#btn:hover{
+background-color: rgb(5, 20, 79);
+}
+.task{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* color: white; */
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    font: 100 0.8rem sans-serif ;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.delbtn{
+    background-color: crimson;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task > div {
+    width: 100%;
+}
+
+.task span{
+    color: rgba(0, 0, 0, 0.574);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #0c0b0b;
+    margin: -2.6% auto;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+  }
